@@ -112,7 +112,7 @@ upper case and lower case letters
 -- Active: 1698695245075@@127.0.0.1@5432@formula1
 -- Write your own code
 
-SELECT "driverId", COUNT(*), AVG(milliseconds) AS avg_milliseconds
+SELECT "driverId", AVG(milliseconds) AS avg_milliseconds
 FROM lap_times
 GROUP BY "driverId"
 ORDER BY avg_milliseconds DESC;
